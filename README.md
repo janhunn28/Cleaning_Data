@@ -20,8 +20,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 - Merges the associated test and training data sets to create one data set.
 - Extracts only the mean and standard deviation for each measurement.
 - Uses descriptive activity names to define the activities in the data set.
-- Labels with dataset with descriptive, tidy variable names
-- Creates a second, independent tidy data set with the average for each activity and subject.
+- Clean up descriptive variable names for ease of analysis.
+- Creates an independent tidy data set with the average of each variable for each activity and subject.
  
 #Data Description
    Data was collected from experiments with a group of 30 participants within an age bracket of 19-48
@@ -42,10 +42,9 @@ Assumptions:
  - The user running the script has set their working directory appropriately using setwd().
  - The user has done an install.packages for dplyr.
  
-1. Place the run_analysis.R script in this working directory folder.
-3. Execute the run_analysis.R script by issuing source("run_analysis.R")
-4. Review your working directory for a directory called UCI HAR dataset which contains the raw data.
-5. View the resulting tidy_data.txt which contains the tidy data for further analysis.
+1. Execute the run_analysis.R script.  
+2. Review your working directory for a directory called UCI HAR dataset which contains the raw data.
+3. View the resulting tidy_data.txt which contains the tidy data for further analysis.
 
 
 #References
