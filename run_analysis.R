@@ -61,6 +61,7 @@ if (!file.exists("UCI HAR Dataset")) {
   
   #Step 5 - Create independent tidy data with average of each variable for each participant and activity.
   avg_data <- ddply(total_data, .(participantid, activity), function(x) colMeans(x[, 3:68]))
+  names(avg_data)[c(3:68)] <- paste0("mean",names(avg_data)[c(3:68)])
   write.table (avg_data, "tidy_data.txt", row.name=FALSE)
   
 }   
