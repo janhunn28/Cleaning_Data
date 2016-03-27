@@ -111,8 +111,8 @@ The complete list of variables of each feature vector is available in 'features.
 
 #Resulting Tidy Data Set:
 After running the run_analysis.R script, the user will have a tidy data set named tidy_data.txt.  This clean data removes all but the mean and standard deviation categories.  It calculates a means for each of the remaining variables for each activity and each participant.  It is sorted by participantid number. There are 180 observations and 68 variables in the tidy data set.  All variable names have been cleaned by making them lowercase and removing all special characters for ease of future analysis. They have also been preficed by the word "mean" because that is what was calculated.
-The tidy data set looks like
-  Column 1 contains the participantid number
-  Column 2 contains one of the 6 activities
-  Columns 3-68 contain the mean of any signal listed above that contained mean or standard deviation data.  
+The tidy data set looks like: 
+  Column 1 contains the participantid number, 
+  Column 2 contains one of the 6 activities, and 
+  Columns 3-68 contain the mean of any of the signals listed above that contained either mean or std (standard deviation).  
 
